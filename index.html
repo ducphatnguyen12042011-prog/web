@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 TV PRO | Live Esports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-light"></div>
+    <div class="grid-layout">
+        <aside class="sidebar glass-panel">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-crosshairs"></i>
+                </div>
+                <span>CS2<span class="gold">TV</span></span>
+            </div>
+            
+            <nav class="main-nav">
+                <button class="nav-btn active" onclick="switchTab('live')">
+                    <i class="fa-solid fa-tower-broadcast"></i> TRỰC TIẾP
+                </button>
+                <button class="nav-btn" onclick="switchTab('schedule')">
+                    <i class="fa-solid fa-calendar-days"></i> LỊCH ĐẤU
+                </button>
+            </nav>
+
+            <div class="system-status glass-panel">
+                <div class="status-item">
+                    <span class="pulse-green"></span>
+                    <small>API: PandaScore</small>
+                </div>
+                <div class="status-item">
+                    <span class="pulse-gold"></span>
+                    <small>Dữ liệu: Real-time</small>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <section id="live" class="tab-content active">
+                <div class="glass-header 3d-bar">
+                    <h1 id="tv-title"><i class="fa-solid fa-satellite-dish"></i> Đang dò sóng tín hiệu...</h1>
+                    <div class="controls">
+                        <button class="btn-action glow-btn" onclick="initCS2TV()">
+                            <i class="fa-solid fa-rotate"></i> Làm mới
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="video-container-wrapper 3d-box">
+                    <div id="video-player" class="video-placeholder">
+                        </div>
+                </div>
+            </section>
+
+            <section id="schedule" class="tab-content">
+                <div class="glass-header 3d-bar">
+                    <h1><i class="fa-solid fa-trophy"></i> GIẢI ĐẤU SẮP TỚI</h1>
+                </div>
+                <div class="matches-grid" id="matches-list">
+                    <div class="match-card 3d-box">
+                        <div class="league-tag">BLAST Premier Fall Final</div>
+                        <div class="team-vs-team">
+                            <div class="team-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Natus_Vincere_logo.svg/1200px-Natus_Vincere_logo.svg.png" alt="NAVI">
+                                <div class="team-name">NAVI</div>
+                            </div>
+                            <div class="vs-circle">VS</div>
+                            <div class="team-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Team_Vitality_logo.svg/1200px-Team_Vitality_logo.svg.png" alt="Vitality">
+                                <div class="team-name">VIT</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
