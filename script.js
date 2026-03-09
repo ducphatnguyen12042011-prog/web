@@ -10,7 +10,7 @@ const CONFIG = {
     RAPID_API_KEY: 'df8b45ecb3msh5cb7ad7385ba8e7p1bae5cjsna241fa2b2c92',
     RAPID_API_HOST: 'hltv-api.p.rapidapi.com', // Thay đổi host tùy thuộc vào API HLTV bạn chọn trên RapidAPI
     
-    YOUTUBE_API_KEY: 'DÁN_API_KEY_YOUTUBE_TẠI_ĐÂY',
+    YOUTUBE_API_KEY: 'AIzaSyAV0ASFvhs_rmVN_nc7YACHb09ZlOqN6WU',
     FALLBACK_VIDEO_ID: 'eOqD2Q5s2M0', 
     REFRESH_INTERVAL: 5 * 60 * 1000 // Cập nhật 5 phút/lần
 };
